@@ -29,7 +29,7 @@ namespace PROYECTOAPI.Models
         public double Gross_profit { get; set; }
         public double Average_purchase_value { get; set; }
         public int Total_users { get; set; }
-        public int New_users_weekly { get; set; }
+        public int Average_order_value { get; set; }
     }
 
     public class ventas_mensuales
@@ -38,6 +38,7 @@ namespace PROYECTOAPI.Models
         public int Id { get; set; }
         public int Year { get; set; }
         public int Month { get; set; }
-        public int Total_Sales { get; set; }
+        public string Nombre { get; set; }
+        public int Total_vendido { get; set; }
     }
 }
