@@ -73,5 +73,49 @@ namespace PROYECTOAPI.Controllers
             }
         }
 
+        [HttpGet("Top5Clientes")]
+        public ActionResult Get_Top_Clientes()
+        {
+            try
+            {
+                return Ok(_context.clientes_mayores_pedidos.ToList());
+
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("ProductosEx")]
+        public ActionResult Get_Productos()
+        {
+            try
+            {
+                return Ok(_context.producto_existencia.ToList());
+
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("Materia")]
+        public ActionResult Get_Materia()
+        {
+            try
+            {
+                return Ok(_context.materia_prima_existencia.ToList());
+
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

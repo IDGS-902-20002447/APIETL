@@ -15,5 +15,10 @@ namespace PROYECTOAPI.Context
         public DbSet<valores_calculados> valores_calculados { get; set; }
 
         public DbSet<ventas_mensuales> ventas_mensuales { get; set; }
+        public DbSet<producto_existencia> producto_existencia { get; set; }
+
+        public DbSet<materia_prima_existencia> materia_prima_existencia { get; set; }
+
+        public DbSet<clientes_mayores_pedidos> clientes_mayores_pedidos { get; set; }
     }
 }
