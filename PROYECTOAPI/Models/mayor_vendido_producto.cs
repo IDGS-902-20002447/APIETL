@@ -14,7 +14,7 @@ namespace PROYECTOAPI.Models
         public int Cantidad { get; set; }
         public double Costo { get; set; }
         public double Total_obtenido { get; set; }
-        public DateTime fecha { get; set; }
+        public int fecha { get; set; }
     }
 
     public class menor_vendido_producto
@@ -26,7 +26,7 @@ namespace PROYECTOAPI.Models
         public int Cantidad { get; set; }
         public double Costo { get; set; }
         public double Total_obtenido { get; set; }
-        public DateTime fecha { get; set; }
+        public int fecha { get; set; }
     }
     public class valores_calculados
     {
@@ -36,7 +36,7 @@ namespace PROYECTOAPI.Models
         public double Average_purchase_value { get; set; }
         public int Total_users { get; set; }
         public int Average_order_value { get; set; }
-        public DateTime fecha {  get; set; }
+        public int fecha {  get; set; }
     }
 
     public class ventas_mensuales
@@ -57,7 +57,7 @@ namespace PROYECTOAPI.Models
         public int Cantidad { get; set; }
         public string Unidad_medida { get; set; }
         public double Costo { get; set; }
-        public DateTime fecha { get; set; }
+        public int fecha { get; set; }
     }
 
     public class producto_existencia
@@ -68,7 +68,7 @@ namespace PROYECTOAPI.Models
         public int Costo { get; set; }
         public string Tipo_producto { get; set; }
         public int Stock { get; set; }
-        public DateTime fecha {get; set;}
+        public int fecha {get; set;}
 
     }
  
@@ -80,7 +80,7 @@ namespace PROYECTOAPI.Models
         public string Name { get; set; }
         public int Telefono { get; set; }
         public string email { get; set; }
-        public DateTime fecha { get; set; }
+        public int fecha { get; set; }
 
     }
 
